@@ -1,3 +1,7 @@
 .DS_Store
 _build
 .ipynb_checkpoints
+docs/12/data
+docs/13/data
+docs/15/data
+*.npy
