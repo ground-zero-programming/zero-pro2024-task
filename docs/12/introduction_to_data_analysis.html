@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>第12回：データ分析入門（講義） &#8212; ゼロから始めるプログラミング</title>
   
@@ -15,53 +14,49 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/12/introduction_to_data_analysis';</script>
@@ -78,28 +73,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -121,12 +111,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -141,9 +139,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="../../intro.html">
+  
   
   
   
@@ -153,12 +155,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../../_static/logo_dalle3.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../_static/logo_dalle3.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../_static/logo_dalle3.png" class="logo__image only-light" alt="ゼロから始めるプログラミング - Home"/>
+    <script>document.write(`<img src="../../_static/logo_dalle3.png" class="logo__image only-dark" alt="ゼロから始めるプログラミング - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -171,8 +184,8 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">講義の教材</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../01/introduction_and_setup.html">第1回：イントロダクションとGoogle Colaboratoryの導入</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../02/variables_and_data_types.html">第2回：変数とデータ型（講義）</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../03/exercise_variables_and_data_types.html">第3回：変数とデータ型（演習）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/variables_and_data_types.html">第2回：変数（講義）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/exercise_variables_and_data_types.html">第3回：変数（演習）</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../04/conditional_branch.html">第4回：条件分岐（講義）</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../05/exercise_conditional_branch.html">第5回：条件分岐（演習）</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../06/loops.html">第6回：繰り返し処理（講義）</a></li>
@@ -207,7 +220,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -216,14 +229,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -246,16 +259,16 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://colab.research.google.com/github/ground-zero-programming/zero-pro2023-task/blob/main/docs/12/introduction_to_data_analysis.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/ground-zero-programming/zero-pro2024-task/blob/main/docs/12/introduction_to_data_analysis.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -277,7 +290,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/ground-zero-programming/zero-pro2023-task" target="_blank"
+      <li><a href="https://github.com/ground-zero-programming/zero-pro2024-task" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -294,7 +307,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/ground-zero-programming/zero-pro2023-task/issues/new?title=Issue%20on%20page%20%2Fdocs/12/introduction_to_data_analysis.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/ground-zero-programming/zero-pro2024-task/issues/new?title=Issue%20on%20page%20%2Fdocs/12/introduction_to_data_analysis.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -376,26 +389,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -454,13 +469,13 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>第12回：データ分析入門（講義）<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<h1>第12回：データ分析入門（講義）<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <p>担当：古居彬</p>
 <section id="id2">
-<h2>内容<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<h2>内容<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <p>第12回では，Pythonを用いた基礎的なデータ分析を体験する．
 本講義の初回で述べたように，Pythonはデータ分析や機械学習，Webサービスなど幅広い分野で利用されている．
 その大きな理由として，さまざまな処理を実現するための機能が豊富に準備されていることが挙げられる．
@@ -475,7 +490,7 @@ document.write(`
 </ul>
 </section>
 <section id="python">
-<h2>Pythonにおけるモジュール，パッケージ，ライブラリ<a class="headerlink" href="#python" title="Permalink to this heading">#</a></h2>
+<h2>Pythonにおけるモジュール，パッケージ，ライブラリ<a class="headerlink" href="#python" title="Link to this heading">#</a></h2>
 <p>前述の通り，Pythonの強みの一つは，さまざまな処理を実現するための機能が準備されており，幅広い分野に応用できることである．
 このような機能を管理する単位は <strong>モジュール</strong> と呼ばれ，その中にはいくつかの関数やクラスが含まれている．</p>
 <p>また，複数のモジュールをまとめたものを <strong>パッケージ</strong> と呼ぶ．</p>
@@ -485,15 +500,15 @@ document.write(`
 <p><img alt="" src="../../_images/module_library.png" /></p>
 <p>ざっくり「モジュールやライブラリを利用することで，データ解析や画像処理など，高度な機能が利用できるようになる」と理解してもらえれば大丈夫だ．</p>
 <section id="id3">
-<h3>Pythonの標準ライブラリ<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<h3>Pythonの標準ライブラリ<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <p>前述の通り，標準ライブラリとはあらかじめ用意されているライブラリである．
-<a class="reference internal" href="../08/functions_and_scope.html"><span class="doc std std-doc">第8回 関数とスコープ</span></a> で紹介した組み込み関数も，この標準ライブラリの中に含まれている．</p>
+<a class="reference internal" href="../08/functions_and_scope.html"><span class="std std-doc">第8回 関数とスコープ</span></a> で紹介した組み込み関数も，この標準ライブラリの中に含まれている．</p>
 <p>組み込み関数は何もせずそのまま使うことができたが，特殊な機能を持つモジュールは後述する <code class="docutils literal notranslate"><span class="pre">import</span></code> 文で読み込む必要がある．</p>
 <p>Pythonの標準ライブラリで提供されている関数・モジュールの一覧は以下の公式ページから参照することができる．</p>
 <p><a class="reference external" href="https://docs.python.org/ja/3/library/index.html">https://docs.python.org/ja/3/library/index.html</a></p>
 </section>
 <section id="id4">
-<h3>Pythonの外部ライブラリ<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<h3>Pythonの外部ライブラリ<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
 <p>標準ライブラリだけでもかなり幅広い処理が実現できるが，データ分析や画像処理，統計解析や科学技術計算など，特定の分野に特化した機能を利用するためには，外部ライブラリを利用する必要がある．</p>
 <p>外部ライブラリは，その名の通り外部の団体や個人によって開発，提供されているライブラリである．
 外部ライブラリを利用するためには，まず初めにインストールが必要である．
@@ -502,7 +517,7 @@ document.write(`
 <div class="admonition- admonition">
 <p class="admonition-title">インストール済ライブラリの表示</p>
 <p>Google Colaboratoryにインストールされているライブラリ一覧を表示したい場合は，コードセルにて以下のコマンドを実行すればよい．</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!pip list
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="err">!</span><span class="n">pip</span> <span class="nb">list</span>
 </pre></div>
 </div>
 <p>以下のように，大量のパッケージが表示されるはずだ．</p>
@@ -539,7 +554,7 @@ Google Colaboratoryにおける外部ライブラリも，このpipというシ�
 </div>
 </section>
 <section id="id5">
-<h3>モジュール／ライブラリのインポート<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<h3>モジュール／ライブラリのインポート<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
 <p>前述の通り，モジュールやライブラリに含まれる関数やクラスを使用するためには，対象となるモジュール／ライブラリを読み込む（ <strong>インポート</strong> する）必要がある．
 これには， <code class="docutils literal notranslate"><span class="pre">import</span></code> という文を使う．以下のように記述することでモジュールをインポートできる．</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">モジュール名</span>
@@ -575,7 +590,7 @@ Google Colaboratoryにおける外部ライブラリも，このpipというシ�
 </div>
 <p>ほかにも <code class="docutils literal notranslate"><span class="pre">math</span></code> モジュールには様々な関数が用意されている．
 以下に，いくつかの例を示す．</p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>関数</p></th>
 <th class="head"><p>説明</p></th>
@@ -602,6 +617,7 @@ Google Colaboratoryにおける外部ライブラリも，このpipというシ�
 </tr>
 </tbody>
 </table>
+</div>
 <p>そのうちいくつかを実行してみよう．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -635,7 +651,7 @@ Google Colaboratoryにおける外部ライブラリも，このpipというシ�
 </div>
 </section>
 <section id="id6">
-<h3>モジュールに別名をつける<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
+<h3>モジュールに別名をつける<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
 <p>モジュールをインポートする際，別の名前（例えば短縮名）を付けることが可能である．</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">モジュール名</span> <span class="k">as</span> <span class="nn">短縮名</span>
 </pre></div>
@@ -663,7 +679,7 @@ Google Colaboratoryにおける外部ライブラリも，このpipというシ�
 </div>
 </section>
 <section id="id7">
-<h3>【発展】特定の関数だけを読み込む<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
+<h3>【発展】特定の関数だけを読み込む<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
 <p>モジュールやライブラリを用いる際，特定の関数だけを読み込みたいことがある．
 そのような場合は，以下の表記を用いて指定した関数・クラスだけをインポートすることができる．</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">モジュール名</span> <span class="kn">import</span> <span class="n">関数名</span>
@@ -715,7 +731,7 @@ Google Colaboratoryにおける外部ライブラリも，このpipというシ�
 </section>
 </section>
 <section id="pandas">
-<h2><code class="docutils literal notranslate"><span class="pre">Pandas</span></code> によるデータ操作<a class="headerlink" href="#pandas" title="Permalink to this heading">#</a></h2>
+<h2><code class="docutils literal notranslate"><span class="pre">Pandas</span></code> によるデータ操作<a class="headerlink" href="#pandas" title="Link to this heading">#</a></h2>
 <p>では，実際にデータ分析の本題に入っていこう．
 今回は，<strong>Pandas</strong> というライブラリを用いる．
 Pandasは，データ解析を容易に行うための機能を提供しており，データの操作や加工，分析などさまざまな処理を行うことができる．</p>
@@ -726,10 +742,16 @@ Pandasは，データ解析を容易に行うための機能を提供してお�
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+</pre></div>
+</div>
+</div>
 </div>
 <p>なお，簡単のため <code class="docutils literal notranslate"><span class="pre">as</span></code> を用いて <code class="docutils literal notranslate"><span class="pre">pd</span></code> という短縮名でインポートした．</p>
 <section id="series-dataframe">
-<h3>Series と DataFrame<a class="headerlink" href="#series-dataframe" title="Permalink to this heading">#</a></h3>
+<h3>Series と DataFrame<a class="headerlink" href="#series-dataframe" title="Link to this heading">#</a></h3>
 <p>Pandasでは，<strong>Series（シリーズ）</strong> や <strong>DataFrame（データフレーム）</strong> といった特殊なデータ構造が使用される．
 Seriesは1次元（列形式）のデータ，DataFrameは2次元（行列形式）のデータを扱うための構造である．</p>
 <p>実際のデータ分析の場面では2次元のデータを扱うことが多いため，本講義では2次元のデータ構造であるDataFrameを主に扱っていく．</p>
@@ -746,23 +768,45 @@ Seriesは1次元（列形式）のデータ，DataFrameは2次元（行列形式
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">格納するデータ</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">行名</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">列名</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>このとき，引数の <code class="docutils literal notranslate"><span class="pre">data</span></code> には，リスト型や辞書型の変数を指定することができる（復習 → <a class="reference internal" href="../02/variables_and_data_types.html"><span class="doc std std-doc">第2回</span></a>）．</p>
+<p>このとき，引数の <code class="docutils literal notranslate"><span class="pre">data</span></code> には，リスト型や辞書型の変数を指定することができる（復習 → <a class="reference internal" href="../02/variables_and_data_types.html"><span class="std std-doc">第2回</span></a>）．</p>
 <p>本講義では，ファイルに格納された情報をDataFrameに取り込んで解析に利用していくこととする．</p>
 </section>
 <section id="id8">
-<h3>データの読み込み<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
+<h3>データの読み込み<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <p>今回は，<a class="reference external" href="http://kogolab.chillout.jp/elearn/icecream/index.html">アイスクリーム屋さんで学ぶ楽しい統計学</a> というサイトで公開されている架空のデータを用いてデータ分析に取り組んでいく．</p>
 <p>まず，当該データをダウンロードしよう．
 以下のセルを実行すると，<code class="docutils literal notranslate"><span class="pre">data</span></code> フォルダの中に <code class="docutils literal notranslate"><span class="pre">ice_cream.csv</span></code> というファイルがダウンロードされる．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>mkdir<span class="w"> </span>-p<span class="w"> </span>data
-<span class="o">!</span>wget<span class="w"> </span>-P<span class="w"> </span>data<span class="w"> </span>https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/12/data/ice_cream.csv<span class="w"> </span>-O<span class="w"> </span>data/ice_cream.csv
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>mkdir<span class="w"> </span>data
+<span class="o">!</span>wget<span class="w"> </span>-P<span class="w"> </span>data<span class="w"> </span>https://raw.githubusercontent.com/ground-zero-programming/zero-pro2024-public/main/docs/12/data/ice_cream.csv
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>zsh:1: command not found: wget
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>mkdir: data: File exists
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--2025-01-08 12:46:56--  https://raw.githubusercontent.com/ground-zero-programming/zero-pro2024-public/main/docs/12/data/ice_cream.csv
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 2606:50c0:8000::154, 2606:50c0:8001::154, 2606:50c0:8002::154, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|2606:50c0:8000::154|:443... 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>connected.
+HTTP request sent, awaiting response... 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>200 OK
+Length: 174 [text/plain]
+Saving to: &#39;data/ice_cream.csv.1&#39;
+
+
+ice_cream.csv.1       0%[                    ]       0  --.-KB/s               
+ice_cream.csv.1     100%[===================&gt;]     174  --.-KB/s    in 0s      
+
+2025-01-08 12:46:56 (3.02 MB/s) - &#39;data/ice_cream.csv.1&#39; saved [174/174]
 </pre></div>
 </div>
 </div>
@@ -925,7 +969,7 @@ Seriesは1次元（列形式）のデータ，DataFrameは2次元（行列形式
 </div>
 </section>
 <section id="id9">
-<h3>列の抽出<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h3>
+<h3>列の抽出<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
 <p>データフレームから任意の列を抽出したい場合，<code class="docutils literal notranslate"><span class="pre">DataFrame['列名']</span></code> のように書けばよい（文字列として指定するため，クォーテーション <code class="docutils literal notranslate"><span class="pre">'</span></code> で囲っていることに注意）．
 例えば上記 <code class="docutils literal notranslate"><span class="pre">df</span></code> から「最高気温」の列を取り出したい場合は，以下の通りである．</p>
 <div class="cell docutils container">
@@ -1093,7 +1137,7 @@ Name: 客数, dtype: int64
 </div>
 </section>
 <section id="id10">
-<h3>行の抽出<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
+<h3>行の抽出<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
 <p>コロン（<code class="docutils literal notranslate"><span class="pre">:</span></code>）で行のインデックスを指定することで，特定の区間の行を抽出することができる．</p>
 <p>例えば，2行目から5行目までを抽出したい場合は，スライシングを用いて以下のように書けば良い．</p>
 <div class="cell docutils container">
@@ -1151,7 +1195,7 @@ Name: 客数, dtype: int64
 </div>
 </section>
 <section id="iloc">
-<h3>【発展】 <code class="docutils literal notranslate"><span class="pre">iloc</span></code> を用いて特定の行・列を抽出<a class="headerlink" href="#iloc" title="Permalink to this heading">#</a></h3>
+<h3>【発展】 <code class="docutils literal notranslate"><span class="pre">iloc</span></code> を用いて特定の行・列を抽出<a class="headerlink" href="#iloc" title="Link to this heading">#</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">iloc</span></code> を利用すると，DataFrameに対して行番号と列番号を指定してデータを抽出することが可能である．</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">DataFrame</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">行番号</span><span class="p">,</span> <span class="n">列番号</span><span class="p">]</span>
 </pre></div>
@@ -1172,7 +1216,7 @@ Name: 1, dtype: int64
 </div>
 </div>
 </div>
-<p>また，3行目から6行目を抽出したい場合は，スライシング（復習 → <a class="reference internal" href="../02/variables_and_data_types.html"><span class="doc std std-doc">第2回</span></a>）を利用して以下のように書くことができる．</p>
+<p>また，3行目から6行目を抽出したい場合は，スライシング（復習 → <a class="reference internal" href="../02/variables_and_data_types.html"><span class="std std-doc">第2回</span></a>）を利用して以下のように書くことができる．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">6</span><span class="p">]</span>
@@ -1272,7 +1316,7 @@ Name: 客数, dtype: int64
 </div>
 </section>
 <section id="id11">
-<h3>条件による抽出<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h3>
+<h3>条件による抽出<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">True</span></code> または <code class="docutils literal notranslate"><span class="pre">False</span></code> を返す条件式を指定することで，データフレームから条件を満たす任意の行を抽出することができる．</p>
 <p>例えば，データフレーム <code class="docutils literal notranslate"><span class="pre">df</span></code> から，「最高気温が30度より大きい」の行だけ抜き出したいとしよう．
 これを表す条件式は， <code class="docutils literal notranslate"><span class="pre">df['最高気温']</span> <span class="pre">&gt;</span> <span class="pre">30</span></code> となる．
@@ -1485,7 +1529,7 @@ Name: 最高気温, dtype: int64
 </div>
 </section>
 <section id="id12">
-<h3>複数条件による抽出<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h3>
+<h3>複数条件による抽出<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
 <p>単一の条件ではなく，複数の条件を使って行を抽出することもできる．</p>
 <p>そのためには，条件分岐の回で学んだ論理演算子の考え方で各条件を繋げればよい．</p>
 <p>ただし，条件分岐の際とは以下の2点が異なる．</p>
@@ -1633,7 +1677,7 @@ Name: 最高気温, dtype: int64
 </div>
 </section>
 <section id="id13">
-<h3>要約統計量の算出<a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h3>
+<h3>要約統計量の算出<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
 <p>データが与えられた時，生の数字だけを見てもなかなか情報は得られない．
 多くの場合，データの特徴を要約した数値を計算し，全体の傾向の掴んだり，さまざまな条件で比較したりする．</p>
 <p>このとき計算される数値のことを <strong>要約統計量</strong> や <strong>記述統計量</strong> と呼ぶ．
@@ -1646,12 +1690,13 @@ Name: 最高気温, dtype: int64
 <p><strong>最小値</strong>（<code class="docutils literal notranslate"><span class="pre">min</span></code>）：データに含まれる最も小さい数．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;最高気温&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="c1"># 最小値の計算</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">minimum</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;最高気温&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="c1"># 最小値の計算</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">minimum</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>27
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>27
 </pre></div>
 </div>
 </div>
@@ -1659,12 +1704,13 @@ Name: 最高気温, dtype: int64
 <p><strong>最大値</strong>（<code class="docutils literal notranslate"><span class="pre">max</span></code>）：データに含まれる最も大きい数．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;最高気温&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="c1"># 最大値の計算</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">maximum</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;最高気温&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="c1"># 最大値の計算</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">maximum</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>34
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>34
 </pre></div>
 </div>
 </div>
@@ -1676,12 +1722,13 @@ Name: 最高気温, dtype: int64
 \]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;最高気温&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="c1"># 平均値の計算</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mean_value</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;最高気温&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="c1"># 平均値の計算</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mean_value</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>30.714285714285715
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>30.714285714285715
 </pre></div>
 </div>
 </div>
@@ -1693,12 +1740,13 @@ s^2 = \frac{1}{N} \sum_{i=1}^N (x_i - \bar{x})^2
 \]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;最高気温&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">var</span><span class="p">()</span> <span class="c1"># 分散の計算</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">variance</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;最高気温&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">var</span><span class="p">()</span> <span class="c1"># 分散の計算</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">variance</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5.296703296703297
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5.296703296703297
 </pre></div>
 </div>
 </div>
@@ -1710,12 +1758,13 @@ s = \sqrt{s^2}
 \]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;最高気温&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()</span> <span class="c1"># 標準偏差の計算</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">stdev</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;最高気温&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()</span> <span class="c1"># 標準偏差の計算</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">stdev</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.3014567770660603
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.3014567770660603
 </pre></div>
 </div>
 </div>
@@ -1816,7 +1865,7 @@ s = \sqrt{s^2}
 </section>
 </section>
 <section id="matplotlib">
-<h2><code class="docutils literal notranslate"><span class="pre">Matplotlib</span></code> によるデータの可視化<a class="headerlink" href="#matplotlib" title="Permalink to this heading">#</a></h2>
+<h2><code class="docutils literal notranslate"><span class="pre">Matplotlib</span></code> によるデータの可視化<a class="headerlink" href="#matplotlib" title="Link to this heading">#</a></h2>
 <p>データ分析において，集計した結果を図やグラフなどを用いて視覚的に表示してみることは非常に重要である．
 そのデータから読み取ることができる情報と，それに基づく意思決定にまで影響を及ぼす．
 このような操作を，データの <strong>可視化（visualization）</strong> と呼ぶ．</p>
@@ -1863,7 +1912,7 @@ s = \sqrt{s^2}
 そのため，一般的なPC環境であれば，OSやブラウザを問わず正しく日本語フォントでグラフを出力できるようになっている．</p>
 </div>
 <section id="id14">
-<h3>線グラフ<a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h3>
+<h3>線グラフ<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">pyplot</span></code>モジュールに含まれている <code class="docutils literal notranslate"><span class="pre">plot</span></code> 関数を用いて，線グラフを描画していこう．</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">)</span>
 </pre></div>
@@ -1879,7 +1928,7 @@ x軸に日付，y軸に客数を指定してグラフを描画すればよい．
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/31e30cb10d9e8a6b31c894b7729595a3daeb9822c9122d61252fca4153abd029.png" src="../../_images/31e30cb10d9e8a6b31c894b7729595a3daeb9822c9122d61252fca4153abd029.png" />
+<img alt="../../_images/4bb5f3552f66b677a59af34f14efdf7d2b13194bed91423ed44a74e6a48798a1.png" src="../../_images/4bb5f3552f66b677a59af34f14efdf7d2b13194bed91423ed44a74e6a48798a1.png" />
 </div>
 </div>
 <p>なお，セルの最後に実行されたオブジェクトの出力表示を無くすため，これ以降グラフを描画する際は，セルの最後の行にセミコロン（<code class="docutils literal notranslate"><span class="pre">;</span></code>）をつけていることに注意されたい（セミコロンが無くてもグラフ自体は問題なく描画できる）．</p>
@@ -1892,7 +1941,7 @@ x軸に日付，y軸に客数を指定してグラフを描画すればよい．
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/f108e7889e0361ff0f4f9e4b0b46d1e4d00fcf90c048324731ed5b67041169ae.png" src="../../_images/f108e7889e0361ff0f4f9e4b0b46d1e4d00fcf90c048324731ed5b67041169ae.png" />
+<img alt="../../_images/2becdc3a9571448fc9acded20b5084ec240a461a7cc9e31e6c1b557fe51a33c3.png" src="../../_images/2becdc3a9571448fc9acded20b5084ec240a461a7cc9e31e6c1b557fe51a33c3.png" />
 </div>
 </div>
 <p>引数 <code class="docutils literal notranslate"><span class="pre">marker</span></code> に違う値を指定するとマーカの形状が変わる．</p>
@@ -1903,7 +1952,7 @@ x軸に日付，y軸に客数を指定してグラフを描画すればよい．
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/8967164ed40b5fc32e6594a9ed8fff3c3e27a24f86ff39ca72fc935573abdc85.png" src="../../_images/8967164ed40b5fc32e6594a9ed8fff3c3e27a24f86ff39ca72fc935573abdc85.png" />
+<img alt="../../_images/d606b19488a1154566cada7e3990dcf68400a43fd6d6fbd402367c43be88786f.png" src="../../_images/d606b19488a1154566cada7e3990dcf68400a43fd6d6fbd402367c43be88786f.png" />
 </div>
 </div>
 <p>他にも，<code class="docutils literal notranslate"><span class="pre">linestyle</span></code> で線の種類を変えたり，<code class="docutils literal notranslate"><span class="pre">color</span></code> で線の色を変更したりできる．</p>
@@ -1914,7 +1963,7 @@ x軸に日付，y軸に客数を指定してグラフを描画すればよい．
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/82e918b880ea6fe515ad35cba6290e01a27f86632391078563e340fd358fa192.png" src="../../_images/82e918b880ea6fe515ad35cba6290e01a27f86632391078563e340fd358fa192.png" />
+<img alt="../../_images/8abe4d9c5a681f14508f5e60dc120fb43c5142ef03988db1628ccb5ad6873524.png" src="../../_images/8abe4d9c5a681f14508f5e60dc120fb43c5142ef03988db1628ccb5ad6873524.png" />
 </div>
 </div>
 <p>それぞれの引数で指定可能な値は以下を参照されたい．</p>
@@ -1935,16 +1984,16 @@ x軸に日付，y軸に客数を指定してグラフを描画すればよい．
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/6c9505e12261728d5325e4d4c8760bec81154e8d30b4b7e0d928a3c15a01d141.png" src="../../_images/6c9505e12261728d5325e4d4c8760bec81154e8d30b4b7e0d928a3c15a01d141.png" />
+<img alt="../../_images/4d2b34dd845c00cf6ff9b12962a0d982835c4da413997be079873461b3bf9ba7.png" src="../../_images/4d2b34dd845c00cf6ff9b12962a0d982835c4da413997be079873461b3bf9ba7.png" />
 </div>
 </div>
 <div class="attention dropdown admonition">
 <p class="admonition-title">タイトルなどが文字化けする場合</p>
 <p>PC環境によっては，日本語フォント表示用コードを実行してもグラフ中に日本語がうまく表示されず，文字が <code class="docutils literal notranslate"><span class="pre">□</span></code> のように表示されることがある．</p>
 <p>その場合は，以下のコードをコードセルに貼り付け，実行してからグラフを描画せよ．</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!pip install japanize-matplotlib
-import japanize_matplotlib
-japanize_matplotlib.japanize()
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">japanize</span><span class="o">-</span><span class="n">matplotlib</span>
+<span class="kn">import</span> <span class="nn">japanize_matplotlib</span>
+<span class="n">japanize_matplotlib</span><span class="o">.</span><span class="n">japanize</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1959,7 +2008,7 @@ japanize_matplotlib.japanize()
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/5b98f6009d7bd5fe09212b432a9c814104200e0f808c9624d48e2d873e9dda9c.png" src="../../_images/5b98f6009d7bd5fe09212b432a9c814104200e0f808c9624d48e2d873e9dda9c.png" />
+<img alt="../../_images/e31a56c61cc2322f3e01e9c52e23ccfd91f1dd1d4047b7338e5a9b4f56b25677.png" src="../../_images/e31a56c61cc2322f3e01e9c52e23ccfd91f1dd1d4047b7338e5a9b4f56b25677.png" />
 </div>
 </div>
 <p>さて，では「日付と客数」のグラフと，「日付と最高気温」のグラフを交互に見てみましょう．
@@ -1968,7 +2017,7 @@ japanize_matplotlib.japanize()
 <p>2つの変数の関係を可視化するために，次に <strong>散布図</strong> というグラフで最高気温と客数の関係を見ていこう．</p>
 </section>
 <section id="id15">
-<h3>散布図<a class="headerlink" href="#id15" title="Permalink to this heading">#</a></h3>
+<h3>散布図<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
 <p>散布図とは，横軸と縦軸に異なる要素を設定し，それらの関係性を調べる際に用いられる．</p>
 <p>Matplotlibでは，<code class="docutils literal notranslate"><span class="pre">pyplot</span></code> モジュールの <code class="docutils literal notranslate"><span class="pre">scatter</span></code> 関数を用いて描画することができる．
 次のように，</p>
@@ -1988,7 +2037,7 @@ japanize_matplotlib.japanize()
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/9249d59f6731ee02d954f59eb9c92b16b8686d26a85294ecb0fa293f2a95c634.png" src="../../_images/9249d59f6731ee02d954f59eb9c92b16b8686d26a85294ecb0fa293f2a95c634.png" />
+<img alt="../../_images/12aab4a840ee7f47a4bb0f17de3fa62e4bbce8dd06e647dcfdc43287ace133db.png" src="../../_images/12aab4a840ee7f47a4bb0f17de3fa62e4bbce8dd06e647dcfdc43287ace133db.png" />
 </div>
 </div>
 <p>このグラフをみると，最高気温と客数の間には，右肩上がりの関係があるように見える．
@@ -1996,7 +2045,7 @@ japanize_matplotlib.japanize()
 <p>この関係については，後ほど詳しく考えてみるとして，その前に他のグラフをいくつか紹介する．</p>
 </section>
 <section id="id16">
-<h3>棒グラフ<a class="headerlink" href="#id16" title="Permalink to this heading">#</a></h3>
+<h3>棒グラフ<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
 <p>棒グラフは日常でもよく目にするグラフの一つであり，横軸に項目，縦軸にデータ値をとり，棒の高さでデータの大きさを表している．</p>
 <p>Matplotlibでは，<code class="docutils literal notranslate"><span class="pre">pyplot</span></code> モジュールの <code class="docutils literal notranslate"><span class="pre">bar</span></code> 関数を用いて棒グラフを描画できる．</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">)</span>
@@ -2013,7 +2062,7 @@ japanize_matplotlib.japanize()
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/d1a10994150690f50c731d623020f51ec8259d7a33dbc69a000aa7d124539965.png" src="../../_images/d1a10994150690f50c731d623020f51ec8259d7a33dbc69a000aa7d124539965.png" />
+<img alt="../../_images/aaf5c3e76aff689dc6b53ec1ad9eeabc7cd7128ab278175d163883cff5929baf.png" src="../../_images/aaf5c3e76aff689dc6b53ec1ad9eeabc7cd7128ab278175d163883cff5929baf.png" />
 </div>
 </div>
 <div class="admonition- admonition">
@@ -2031,7 +2080,7 @@ japanize_matplotlib.japanize()
 </div>
 </section>
 <section id="id17">
-<h3>【発展】ヒストグラム<a class="headerlink" href="#id17" title="Permalink to this heading">#</a></h3>
+<h3>【発展】ヒストグラム<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
 <p>ヒストグラムは，データを階級で分割し，横軸に階級，縦軸に各階級の度数をとった統計グラフである．
 簡単にいうと，データをいくつかの均等な区間に分割するとともに，各区間に含まれるデータの個数を計算し，可視化したものである．
 主に，データの分布を調べるために用いられる．</p>
@@ -2050,7 +2099,7 @@ japanize_matplotlib.japanize()
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/3ef27a1f67a3bc681d80f76922dc092bf8d6790f68267195c0e222cf99b4d8e4.png" src="../../_images/3ef27a1f67a3bc681d80f76922dc092bf8d6790f68267195c0e222cf99b4d8e4.png" />
+<img alt="../../_images/37a2a6c34bd33a1ffd884288853c7b426ea3a01cccb0cc9909c46c40287d6707.png" src="../../_images/37a2a6c34bd33a1ffd884288853c7b426ea3a01cccb0cc9909c46c40287d6707.png" />
 </div>
 </div>
 <p>このグラフより，客数は300人から450人くらいの範囲に主に分布しており，客数が500人を超えることは稀であることがわかる．</p>
@@ -2066,12 +2115,12 @@ japanize_matplotlib.japanize()
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/267abc8658cd8ddc0b91e131cf9acb818e35b8d31c42de88179ecf917662234c.png" src="../../_images/267abc8658cd8ddc0b91e131cf9acb818e35b8d31c42de88179ecf917662234c.png" />
+<img alt="../../_images/8a177fad4418223010e387f40fa12bafcdc9f027b183fcb8047263a6591ca280.png" src="../../_images/8a177fad4418223010e387f40fa12bafcdc9f027b183fcb8047263a6591ca280.png" />
 </div>
 </div>
 </section>
 <section id="id18">
-<h3>複数のグラフの重ね合わせ<a class="headerlink" href="#id18" title="Permalink to this heading">#</a></h3>
+<h3>複数のグラフの重ね合わせ<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
 <p>Matplotlibでは，グラフ作成用関数を繰り返し実行することで，各グラフを重ねて表示することが可能である．</p>
 <p>例として，<code class="docutils literal notranslate"><span class="pre">df</span></code> のデータを第1週目（日付1〜7）と第2週目（日付8〜14）に分け，それぞれ対応する曜日と「客数」の線グラフを重ねて描画してみる．</p>
 <p>ここで，日付は月曜始まりとして扱う．つまり，日付1と8は月曜，日付2と9は火曜, …, 日付7と14は日曜となる．</p>
@@ -2090,7 +2139,7 @@ japanize_matplotlib.japanize()
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/7f17a40d617f5ec6342787a6110d84909e3f7b55aebb44659713ee9e98f9e6da.png" src="../../_images/7f17a40d617f5ec6342787a6110d84909e3f7b55aebb44659713ee9e98f9e6da.png" />
+<img alt="../../_images/2090933b2c33614cf60e28f401072011a6096e1665b38298aeb42730118fe8f6.png" src="../../_images/2090933b2c33614cf60e28f401072011a6096e1665b38298aeb42730118fe8f6.png" />
 </div>
 </div>
 <p>上記からわかるように，線グラフを重ねたい場合は同じセル内で単純に <code class="docutils literal notranslate"><span class="pre">plt.plot</span></code> を複数実行すればよいことがわかる．
@@ -2109,12 +2158,12 @@ japanize_matplotlib.japanize()
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/a9d520cc188d3efd64467e6e62dd71108fdbf81d23b303b84c88e65386acd24a.png" src="../../_images/a9d520cc188d3efd64467e6e62dd71108fdbf81d23b303b84c88e65386acd24a.png" />
+<img alt="../../_images/43e422a4c1726e7a67c42391691205c079fccc8d2aa4e323df62452dcfc15793.png" src="../../_images/43e422a4c1726e7a67c42391691205c079fccc8d2aa4e323df62452dcfc15793.png" />
 </div>
 </div>
 </section>
 <section id="id19">
-<h3>グラフから読み取れる相関関係<a class="headerlink" href="#id19" title="Permalink to this heading">#</a></h3>
+<h3>グラフから読み取れる相関関係<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
 <p>さて，話を少し戻そう．
 散布図の説明をした際に，「最高気温」と「客数」の間に，右肩上がりの関係が確認された．</p>
 <p>このように，「x軸の値が大きくなるほど，y軸の値も大きくなる」ような関係性を，<strong>正の相関</strong> という．
@@ -2133,7 +2182,7 @@ r = \frac{\sum_{i=1}^N (x_i - \bar{x}) (y_i - \bar{y})}{\sqrt{\sum_{i=1}^N(x_i -
 <div class="admonition- admonition">
 <p class="admonition-title">相関係数の目安</p>
 <p>相関係数の値と相関の強さに関して，よく使われる目安は以下の通りである．</p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>相関係数の絶対値</p></th>
 <th class="head"><p>目安</p></th>
@@ -2154,6 +2203,7 @@ r = \frac{\sum_{i=1}^N (x_i - \bar{x}) (y_i - \bar{y})}{\sqrt{\sum_{i=1}^N(x_i -
 </tr>
 </tbody>
 </table>
+</div>
 <p>ただしこれは絶対的な基準ではないことに注意されたい．</p>
 </div>
 <p>相関係数も要約統計量と同様に，Pandasの機能を用いて計算することができる．</p>
@@ -2268,8 +2318,8 @@ r = \frac{\sum_{i=1}^N (x_i - \bar{x}) (y_i - \bar{y})}{\sqrt{\sum_{i=1}^N(x_i -
               
               
               
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                <footer class="prev-next-footer d-print-none">
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="../11/exercise_class.html"
@@ -2297,6 +2347,7 @@ r = \frac{\sum_{i=1}^N (x_i - \bar{x}) (y_i - \bar{y})}{\sqrt{\sum_{i=1}^N(x_i -
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -2354,9 +2405,10 @@ By Hiroaki Aizawa & Akira Furui
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023 (CC BY 4.0).
+      © Copyright 2024 (CC BY 4.0).
       <br/>
     
   </p>
@@ -2380,8 +2432,8 @@ By Hiroaki Aizawa & Akira Furui
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>第14回：機械学習入門（講義） &#8212; ゼロから始めるプログラミング</title>
   
@@ -15,53 +14,49 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/14/introduction_to_machine_learning';</script>
@@ -78,28 +73,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -121,12 +111,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -141,9 +139,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="../../intro.html">
+  
   
   
   
@@ -153,12 +155,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../../_static/logo_dalle3.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../_static/logo_dalle3.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../_static/logo_dalle3.png" class="logo__image only-light" alt="ゼロから始めるプログラミング - Home"/>
+    <script>document.write(`<img src="../../_static/logo_dalle3.png" class="logo__image only-dark" alt="ゼロから始めるプログラミング - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -171,8 +184,8 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">講義の教材</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../01/introduction_and_setup.html">第1回：イントロダクションとGoogle Colaboratoryの導入</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../02/variables_and_data_types.html">第2回：変数とデータ型（講義）</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../03/exercise_variables_and_data_types.html">第3回：変数とデータ型（演習）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/variables_and_data_types.html">第2回：変数（講義）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/exercise_variables_and_data_types.html">第3回：変数（演習）</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../04/conditional_branch.html">第4回：条件分岐（講義）</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../05/exercise_conditional_branch.html">第5回：条件分岐（演習）</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../06/loops.html">第6回：繰り返し処理（講義）</a></li>
@@ -207,7 +220,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -216,14 +229,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -246,16 +259,16 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://colab.research.google.com/github/ground-zero-programming/zero-pro2023-task/blob/main/docs/14/introduction_to_machine_learning.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/ground-zero-programming/zero-pro2024-task/blob/main/docs/14/introduction_to_machine_learning.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -277,7 +290,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/ground-zero-programming/zero-pro2023-task" target="_blank"
+      <li><a href="https://github.com/ground-zero-programming/zero-pro2024-task" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -294,7 +307,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/ground-zero-programming/zero-pro2023-task/issues/new?title=Issue%20on%20page%20%2Fdocs/14/introduction_to_machine_learning.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/ground-zero-programming/zero-pro2024-task/issues/new?title=Issue%20on%20page%20%2Fdocs/14/introduction_to_machine_learning.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -376,26 +389,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -468,13 +483,13 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>第14回：機械学習入門（講義）<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<h1>第14回：機械学習入門（講義）<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <p>担当：相澤宏旭</p>
 <section id="id2">
-<h2>内容<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<h2>内容<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <p>第12回目の講義でPythonを用いてデータを読み込み，可視化し，そしてデータの説明する統計量を算出した．平均や分散といった統計量もデータの性質を我々が分析するうえで重要な手がかりとなるが，このような手がかりをコンピュータ自らがデータから学ぶことができないだろうか？そして，データと手がかりから対象の性質を予測することはできないだろうか？このような動機のもと，<strong>機械学習（Machine Learning）</strong> と呼ばれる研究分野は <strong>人工知能（Artificial Intelligence）</strong> の一分野として発展してきた．</p>
 <p>特に，近年，機械学習技術の進展は著しい．突然だが，ゼロからはじめるプログラミングのサポートページの左上の猫の画像（もしくは静止画とした下の図）をみてほしい．実は，この画像は機械学習技術によってゼロから描き出された画像である．具体的には，<a class="reference external" href="https://openai.com/dall-e-3">DALL·E 3</a>と呼ばれる <strong>ニューラルネットワーク</strong> でモデル化された言語から画像を生成する機械学習アルゴリズムで生成している（今回の画像の例では，<strong>Minimalistic illustration of a cat programming on a laptop, suitable for a web page icon.</strong> と言葉を与えた）．現在の機械学習技術はコンピュータは大量のデータから猫とコンピュータの知識・手がかりを学習し，これらを組み合わせることで画像を描き出すことができるまでに至っている．</p>
 <p><img alt="" src="../../_images/gen_cats.png" /></p>
@@ -490,7 +505,7 @@ document.write(`
 </ul>
 </section>
 <section id="id3">
-<h2>機械学習<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<h2>機械学習<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
 <p>まずは機械学習の雰囲気を掴むために必要最低限の概要と用語を学ぼう．</p>
 <p>機械学習では，<strong>タスク</strong>（例：画像を生成する，気温から客数を予測する）を行うための <strong>モデル</strong> を複数のパラメータ <span class="math notranslate nohighlight">\(\theta\)</span> を持つ関数 <span class="math notranslate nohighlight">\(f_{\theta}\)</span> で考える．
 ここでモデルを関数で考えるとは，下図に示すように，何らかの入力 <span class="math notranslate nohighlight">\(x\)</span> からタスクに対応する出力 <span class="math notranslate nohighlight">\(y\)</span> を計算する関数 <span class="math notranslate nohighlight">\(y=f_{\theta}(x)\)</span> を設計することである（厳密にはパラメータ <span class="math notranslate nohighlight">\(\theta\)</span> を求める．詳細は後述）．</p>
@@ -511,11 +526,11 @@ document.write(`
 また最初の図で示したように，機械学習モデル <span class="math notranslate nohighlight">\(f_{\theta}\)</span> は関数の作り方次第で柔軟に設計することができ，パラメータ化の方法や数が異なるだけで入出力の対応関係をモデル化するという観点でみると線形回帰もニューラルネットワークも本質的には同じである．</p>
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
-<p>上記の機械学習の説明は非常に簡略化された説明であり，具体例も限定的である点に留意されたい．機械学習については専門科目または<a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2023-public/docs/advanced_materials.html#id3">別ページ</a>に参考資料を記載したので機械学習に興味がある学生は参照されたい．</p>
+<p>上記の機械学習の説明は非常に簡略化された説明であり，具体例も限定的である点に留意されたい．機械学習については専門科目または<a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2024-public/docs/advanced_materials.html#id3">別ページ</a>に参考資料を記載したので機械学習に興味がある学生は参照されたい．</p>
 </div>
 </section>
 <section id="id4">
-<h2>線形回帰<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<h2>線形回帰<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
 <p>前述したように，線形回帰の <strong>回帰（Regression）</strong> とはある入力 <span class="math notranslate nohighlight">\(x\)</span> からその入力に対応する連続値の出力 <span class="math notranslate nohighlight">\(y\)</span> を予測するタスクであり，線形回帰のモデル <span class="math notranslate nohighlight">\(f_{\theta}\)</span> を求めるために，<span class="math notranslate nohighlight">\(x\)</span>に対応する正解データ <span class="math notranslate nohighlight">\(y\)</span> を利用する教師あり学習を行う．まずは，第2回と同様に <span class="math notranslate nohighlight">\(y=2x + 1\)</span> の方程式を例にしながら，回帰タスクを解くための関数 <span class="math notranslate nohighlight">\(f_{\theta}\)</span> の説明をする．</p>
 <p>このとき，線形回帰のゴールは未知の値 <span class="math notranslate nohighlight">\(x'\)</span> が与えられ，そのときの <span class="math notranslate nohighlight">\(y\)</span> の値を求めることであり，以下の図の赤線の関数を求めることである．関数の形 <span class="math notranslate nohighlight">\(y=ax+b\)</span> と関数の傾き <span class="math notranslate nohighlight">\(a\)</span> と切片 <span class="math notranslate nohighlight">\(b\)</span> がそれぞれ <span class="math notranslate nohighlight">\(a=2\)</span> と <span class="math notranslate nohighlight">\(b=1\)</span> が既知の場合，計算は容易である（<span class="math notranslate nohighlight">\(y=2x+1\)</span>の場合，<span class="math notranslate nohighlight">\(x'=10\)</span>ならば対応する<span class="math notranslate nohighlight">\(y\)</span>は<span class="math notranslate nohighlight">\(21\)</span>）．しかしながら，もしこれらの <span class="math notranslate nohighlight">\(a,b\)</span> がわからなかったらどうだろうか？また左図のようにデータに当てはまる関数はいくつも引くことができる．もっとも良い関数はどのように決定すれば良いだろうか？</p>
 <p><img alt="" src="../../_images/linear_regression.png" /></p>
@@ -529,7 +544,7 @@ f_{\theta}(x) = ax + b,
 <p>以降，その <span class="math notranslate nohighlight">\(a,b\)</span> をPythonを使って求める．</p>
 </section>
 <section id="scikit-learn">
-<h2>Scikit-Learnによる線形回帰<a class="headerlink" href="#scikit-learn" title="Permalink to this heading">#</a></h2>
+<h2>Scikit-Learnによる線形回帰<a class="headerlink" href="#scikit-learn" title="Link to this heading">#</a></h2>
 <p>本講義は，以下の二つのライブラリを用いる．</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://numpy.org">Numpy</a>は複数の値を持つデータ間の計算をサポートするライブラリである．発展的な内容であるが，ベクトルや行列の計算が容易である．特に，逆行列の計算や固有値計算など線形代数で学んだ演算が手厚くサポートされている．公式ドキュメントの<a class="reference external" href="https://numpy.org/learn/">Learn</a>という項目に基礎的な使い方がまとまっている．</p></li>
@@ -538,13 +553,19 @@ f_{\theta}(x) = ax + b,
 <p>NumpyとScikit-Learnは日本語で読める多くの書籍やWebページもあるので各自検索されたい．</p>
 <p>前回前々回から多くのライブラリが紹介され混乱するかと思うが，前回の講義でも述べたようにこれらのライブラリのすべての機能を把握している必要はなく，必要に応じて適切に検索して活用してほしい．</p>
 <section id="id5">
-<h3>準備<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
-<p>まずは本講義のプログラムで必要なライブラリをインポートとデータをダウンロードする．ライブラリの説明とインポート方法は <a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2023-public/docs/12/introduction_to_data_analysis.html#python">第12回の講義</a> を参照されたい．</p>
+<h3>準備<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<p>まずは本講義のプログラムで必要なライブラリをインポートとデータをダウンロードする．ライブラリの説明とインポート方法は <a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2024-public/docs/12/introduction_to_data_analysis.html#python">第12回の講義</a> を参照されたい．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> <span class="c1"># numpyのimport</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> <span class="c1"># 可視化のためのmatplotlibのimport．詳しくは第12回を参照</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
 </pre></div>
 </div>
 </div>
@@ -561,29 +582,66 @@ f_{\theta}(x) = ax + b,
 </div>
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
-<p>実行環境によっては上記のMatplotlibの日本語の設定がうまくいかない場合があります．代替手段として，<code class="docutils literal notranslate"><span class="pre">japanize-matplotlib</span></code>ライブラリを使って日本語化する方法があります．詳細は第12回の<a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2023-public/docs/12/introduction_to_data_analysis.html#matplotlib">タイトルなどが文字化けする場合</a>をご参照ください．</p>
+<p>実行環境によっては上記のMatplotlibの日本語の設定がうまくいかない場合があります．代替手段として，<code class="docutils literal notranslate"><span class="pre">japanize-matplotlib</span></code>ライブラリを使って日本語化する方法があります．詳細は第12回の<a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2024-public/docs/12/introduction_to_data_analysis.html#matplotlib">タイトルなどが文字化けする場合</a>をご参照ください．</p>
 <p>追記：<code class="docutils literal notranslate"><span class="pre">japanize-matplotlib</span></code>をインポート後に上記の<code class="docutils literal notranslate"><span class="pre">rcParams</span></code>によるフォントの変更を行うと日本語化ができないことがあるそうです．両者の日本語化を同時に行わないようにしてください．</p>
 </div>
 <p>以下のセルでデータをダウンロードする．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>wget<span class="w"> </span>https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/14/data.npy<span class="w"> </span>-O<span class="w"> </span>data.npy
-<span class="o">!</span>wget<span class="w"> </span>https://raw.githubusercontent.com/ground-zero-programming/zero-pro2023-public/main/docs/14/target.npy<span class="w"> </span>-O<span class="w"> </span>target.npy
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>wget<span class="w"> </span>https://raw.githubusercontent.com/ground-zero-programming/zero-pro2024-public/main/docs/14/data.npy
+<span class="o">!</span>wget<span class="w"> </span>https://raw.githubusercontent.com/ground-zero-programming/zero-pro2024-public/main/docs/14/target.npy
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>zsh:1: command not found: wget
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--2025-01-08 12:47:05--  https://raw.githubusercontent.com/ground-zero-programming/zero-pro2024-public/main/docs/14/data.npy
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>zsh:1: command not found: wget
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 2606:50c0:8000::154, 2606:50c0:8001::154, 2606:50c0:8002::154, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|2606:50c0:8000::154|:443... connected.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>HTTP request sent, awaiting response... 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>200 OK
+Length: 368 [application/octet-stream]
+Saving to: &#39;data.npy.1&#39;
+
+
+data.npy.1            0%[                    ]       0  --.-KB/s               
+data.npy.1          100%[===================&gt;]     368  --.-KB/s    in 0s      
+
+2025-01-08 12:47:05 (13.0 MB/s) - &#39;data.npy.1&#39; saved [368/368]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--2025-01-08 12:47:06--  https://raw.githubusercontent.com/ground-zero-programming/zero-pro2024-public/main/docs/14/target.npy
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 2606:50c0:8000::154, 2606:50c0:8001::154, 2606:50c0:8002::154, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|2606:50c0:8000::154|:443... 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>connected.
+HTTP request sent, awaiting response... 
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>200 OK
+Length: 368 [application/octet-stream]
+Saving to: &#39;target.npy.1&#39;
+
+
+target.npy.1          0%[                    ]       0  --.-KB/s               
+target.npy.1        100%[===================&gt;]     368  --.-KB/s    in 0s      
+
+2025-01-08 12:47:06 (6.62 MB/s) - &#39;target.npy.1&#39; saved [368/368]
 </pre></div>
 </div>
 </div>
 </div>
 </section>
 <section id="id6">
-<h3>データの読み込み<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
+<h3>データの読み込み<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
 <p>続いて，線形回帰に用いるデータ <code class="docutils literal notranslate"><span class="pre">X</span></code>, <code class="docutils literal notranslate"><span class="pre">y</span></code> を作成する．今回はNumpyによるデータ読み込み関数 <code class="docutils literal notranslate"><span class="pre">np.load</span></code>関数から先ほどダウンロードしたデータを読み込む．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -707,8 +765,8 @@ f_{\theta}(x) = ax + b,
 <p>ここまでで利用するデータの読み込みが完了した．Numpyについてもう少し詳しく知りたい受講者は後述する 【発展】Numpyの使い方 を参考にされたい．</p>
 </section>
 <section id="id7">
-<h3>データの可視化<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
-<p>第12回でも述べたようにデータをグラフなどを用いて視覚的に表示してみることは非常に重要である．特に，前述の数値だけではデータ <code class="docutils literal notranslate"><span class="pre">X</span></code> と <code class="docutils literal notranslate"><span class="pre">y</span></code> の関連性はわからない．ここでも matplotlib を用いて <code class="docutils literal notranslate"><span class="pre">X</span></code> と <code class="docutils literal notranslate"><span class="pre">y</span></code> を可視化する．matplotlibの使い方は<a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2023-public/docs/12/introduction_to_data_analysis.html#matplotlib">第12回の資料</a>を確認されたい．</p>
+<h3>データの可視化<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<p>第12回でも述べたようにデータをグラフなどを用いて視覚的に表示してみることは非常に重要である．特に，前述の数値だけではデータ <code class="docutils literal notranslate"><span class="pre">X</span></code> と <code class="docutils literal notranslate"><span class="pre">y</span></code> の関連性はわからない．ここでも matplotlib を用いて <code class="docutils literal notranslate"><span class="pre">X</span></code> と <code class="docutils literal notranslate"><span class="pre">y</span></code> を可視化する．matplotlibの使い方は<a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2024-public/docs/12/introduction_to_data_analysis.html#matplotlib">第12回の資料</a>を確認されたい．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;観測されたデータ&#39;</span><span class="p">)</span> <span class="c1"># 散布図のプロット</span>
@@ -720,16 +778,16 @@ f_{\theta}(x) = ax + b,
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x1462d1c10&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x113cc62e0&gt;
 </pre></div>
 </div>
-<img alt="../../_images/9c95c78632f1bed3adb0754d91a8541643f7f618bf6f30df4a3e1a7d1b07c595.png" src="../../_images/9c95c78632f1bed3adb0754d91a8541643f7f618bf6f30df4a3e1a7d1b07c595.png" />
+<img alt="../../_images/39e9ee13b59f826ba7121703fc616e570f5b38e6f3f75609b0d6401597d338f8.png" src="../../_images/39e9ee13b59f826ba7121703fc616e570f5b38e6f3f75609b0d6401597d338f8.png" />
 </div>
 </div>
 <p>データの可視化を見ると正の相関があり，<code class="docutils literal notranslate"><span class="pre">X</span></code> と <code class="docutils literal notranslate"><span class="pre">y</span></code> の間には，最初の例のように，<span class="math notranslate nohighlight">\(y=ax+b\)</span> の関係性が潜んでいるように思える．</p>
 </section>
 <section id="id8">
-<h3>Scikit-Learnによる線形回帰の学習<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
+<h3>Scikit-Learnによる線形回帰の学習<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <p>では，実際に，<strong>Scikit-Learn</strong> という機械学習のライブラリを用いて，<code class="docutils literal notranslate"><span class="pre">X</span></code> と<code class="docutils literal notranslate"><span class="pre">y</span></code> のペアからなるデータから <span class="math notranslate nohighlight">\(y=ax+b\)</span> の <span class="math notranslate nohighlight">\(a\)</span> と <span class="math notranslate nohighlight">\(b\)</span> を計算することを試みる．</p>
 <p>Scikit-Learnで線形回帰を実行するためには <code class="docutils literal notranslate"><span class="pre">LinearRegression</span></code>クラスをインポートする必要がある．以下のセルで実行する．</p>
 <div class="cell docutils container">
@@ -739,7 +797,7 @@ f_{\theta}(x) = ax + b,
 </div>
 </div>
 </div>
-<p>インポートした <code class="docutils literal notranslate"><span class="pre">LinearRegression</span></code> クラスをインスタンス化し，(<code class="docutils literal notranslate"><span class="pre">X,y</span></code>)のペアをインスタンスメソッド <code class="docutils literal notranslate"><span class="pre">fit</span></code> に渡すと計算できる．クラスについては <a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2023-public/docs/10/application.html#">第10回の講義</a> を復習されたい．</p>
+<p>インポートした <code class="docutils literal notranslate"><span class="pre">LinearRegression</span></code> クラスをインスタンス化し，(<code class="docutils literal notranslate"><span class="pre">X,y</span></code>)のペアをインスタンスメソッド <code class="docutils literal notranslate"><span class="pre">fit</span></code> に渡すと計算できる．クラスについては <a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2024-public/docs/10/application.html#">第10回の講義</a> を復習されたい．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">reg</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
@@ -764,7 +822,7 @@ f_{\theta}(x) = ax + b,
 <p>傾きと切片をみると <code class="docutils literal notranslate"><span class="pre">2</span></code> と <code class="docutils literal notranslate"><span class="pre">1</span></code> に近い値が得られたことがわかり，数値データの集合からデータの背後に潜む <span class="math notranslate nohighlight">\(y=ax+b\)</span> で表現される関係性をパラメータ <span class="math notranslate nohighlight">\(a, b\)</span> の線形回帰から求めることができた．</p>
 </section>
 <section id="id9">
-<h3>結果の確認<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h3>
+<h3>結果の確認<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
 <p>最後に計算された傾きと切片をプロットしてみよう．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -782,10 +840,10 @@ f_{\theta}(x) = ax + b,
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x17361ef40&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x1297ff1f0&gt;
 </pre></div>
 </div>
-<img alt="../../_images/6741cf894eaf5a8f23fd3fedf873e4ff42dabbe99706a791b6a43d0d81c554fb.png" src="../../_images/6741cf894eaf5a8f23fd3fedf873e4ff42dabbe99706a791b6a43d0d81c554fb.png" />
+<img alt="../../_images/685e16b5fe57f66adebd1187834bb638dabd4940e0aeda6666f658a28cb27221.png" src="../../_images/685e16b5fe57f66adebd1187834bb638dabd4940e0aeda6666f658a28cb27221.png" />
 </div>
 </div>
 <p>このように，ライブラリを使うと非常に簡単に機械学習・データ分析のアルゴリズムを利用することができ，とても便利な仕組みである．しかし，ここまでの用意されたデータを元にセルを実行しただけではプログラミング感なくゼロから始めるプログラミングの講義が終了してしまう．そこで，前述の線形回帰のプログラムを，</p>
@@ -808,17 +866,17 @@ f_{\theta}(x) = ax + b,
 </section>
 <hr class="docutils" />
 <section id="numpy">
-<h2>【発展】 Numpyの使い方<a class="headerlink" href="#numpy" title="Permalink to this heading">#</a></h2>
+<h2>【発展】 Numpyの使い方<a class="headerlink" href="#numpy" title="Link to this heading">#</a></h2>
 <p>前述したように，Numpyは複数の値を持つベクトルや行列を計算するためのライブラリである．ここでは後述する内容を理解するためにNumpyの必要最低限の使い方を紹介する．</p>
 <section id="id10">
-<h3>Numpyによるベクトルの定義<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
+<h3>Numpyによるベクトルの定義<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
 <p>線形回帰や機械学習に限らず，データを扱う場面では，複数の値を持つベクトルや行列を扱うことが多々ある．今回の線形回帰の例でも複数の <span class="math notranslate nohighlight">\((x,y)\)</span> のデータからパラメータ <span class="math notranslate nohighlight">\(a,b\)</span> を計算する必要があり，このとき，複数の<span class="math notranslate nohighlight">\((x,y)\)</span>を保存したデータは行列として扱う必要がある．また，前回の講義ではPandasの<code class="docutils literal notranslate"><span class="pre">DataFrame</span></code>を用いて行と列から構成されるデータ構造を扱った．<code class="docutils literal notranslate"><span class="pre">DataFrame</span></code>は条件に基づく値の操作や統計量の算出を直感的に行えるが，例えば，行列計算をしようと思うと一手間必要となる．</p>
 <p>このような場面で便利なのがNumpyの<code class="docutils literal notranslate"><span class="pre">array</span></code>というデータ型である．先ほどはNumpyの<code class="docutils literal notranslate"><span class="pre">array</span></code>型を<code class="docutils literal notranslate"><span class="pre">type</span></code>関数で確認するのみだったが，以降のセルで<code class="docutils literal notranslate"><span class="pre">array</span></code>型を使うと容易にベクトルや行列の計算が簡単に行えることを確認されたい．</p>
 <p>では，まずは，要素を一列に並べた一次元配列としてベクトル <span class="math notranslate nohighlight">\(\mathbf{a}=[1,2,3]\)</span> を定義しよう（本講義資料では，ベクトルは小文字で太字で，行列は大文字で太字で記述する）．ベクトルや行列は以下で定義できる．</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">名前</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">要素</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>まずは Numpyを<code class="docutils literal notranslate"><span class="pre">import</span></code>する．慣習上，<code class="docutils literal notranslate"><span class="pre">np</span></code>と短縮系で<code class="docutils literal notranslate"><span class="pre">import</span></code>する（復習→<a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2023-public/docs/12/introduction_to_data_analysis.html#python">モジュールのインポート</a>）</p>
+<p>まずは Numpyを<code class="docutils literal notranslate"><span class="pre">import</span></code>する．慣習上，<code class="docutils literal notranslate"><span class="pre">np</span></code>と短縮系で<code class="docutils literal notranslate"><span class="pre">import</span></code>する（復習→<a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2024-public/docs/12/introduction_to_data_analysis.html#python">モジュールのインポート</a>）</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -846,7 +904,7 @@ f_{\theta}(x) = ax + b,
 </div>
 </div>
 </div>
-<p>上記のように，Numpyでは要素としてリスト（またはタプル）を与えて定義する．<code class="docutils literal notranslate"><span class="pre">type</span></code>関数でデータの型を確認されたい（復習→<a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2023-public/docs/02/variables_and_data_types.html#id8">変数の型と名前</a>）．</p>
+<p>上記のように，Numpyでは要素としてリスト（またはタプル）を与えて定義する．<code class="docutils literal notranslate"><span class="pre">type</span></code>関数でデータの型を確認されたい（復習→<a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2024-public/docs/02/variables_and_data_types.html#id8">変数の型と名前</a>）．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
@@ -920,7 +978,7 @@ f_{\theta}(x) = ax + b,
 <p>上記のセルのようにベクトルの形状を確認すると定義したベクトルの違いがわかる．<code class="docutils literal notranslate"><span class="pre">a</span></code>は複数の値を一次元に並べただけに対して，<code class="docutils literal notranslate"><span class="pre">b</span></code>と<code class="docutils literal notranslate"><span class="pre">c</span></code>は行方向または列方向に値を並べたデータになっていることがわかる．</p>
 </section>
 <section id="id11">
-<h3>Numpyによる行列の定義<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h3>
+<h3>Numpyによる行列の定義<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
 <p>続いて，同様に<code class="docutils literal notranslate"><span class="pre">np.array</span></code>を利用して行列を作成する．作成すると言っても<code class="docutils literal notranslate"><span class="pre">np.array</span></code>の要素の与え方が異なるだけである．以下の行列</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\mathbf{A} = \begin{bmatrix}
@@ -964,7 +1022,7 @@ f_{\theta}(x) = ax + b,
 <p>同様に，<code class="docutils literal notranslate"><span class="pre">A.shape</span></code>とすると行列の行数と列数が取得できる．</p>
 </section>
 <section id="id12">
-<h3>Numpyによる行列計算<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h3>
+<h3>Numpyによる行列計算<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
 <p>ベクトルと行列の定義の次は線形代数で学んだ行列計算をNumpyを用いて実装することを試みる．まずはじめに，次の行列 <span class="math notranslate nohighlight">\(\mathbf{A}, \mathbf{B}\)</span> を定義する．</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1048,7 +1106,7 @@ f_{\theta}(x) = ax + b,
 </section>
 </section>
 <section id="id13">
-<h2>【発展】 データの生成<a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h2>
+<h2>【発展】 データの生成<a class="headerlink" href="#id13" title="Link to this heading">#</a></h2>
 <p>Numpyの必要最低限の基礎を紹介した後は，<code class="docutils literal notranslate"><span class="pre">np.load</span></code>関数で事前に用意したデータを利用する代わりに自身でデータを生成することを試みる．後述するように，データ数（<code class="docutils literal notranslate"><span class="pre">N</span></code>），傾き（<code class="docutils literal notranslate"><span class="pre">a</span></code>），切片（<code class="docutils literal notranslate"><span class="pre">b</span></code>），変動量（<code class="docutils literal notranslate"><span class="pre">noise_scale</span></code>）を制御することができ，線形回帰の特性をデータを変更することから確認できるようになる．</p>
 <p>先ほどの例と同様に，ここでは第12回の講義のように複数個（<span class="math notranslate nohighlight">\(N\)</span>個）の <span class="math notranslate nohighlight">\((x,y)\)</span> のペアデータが利用できること，各データの入出力間には <span class="math notranslate nohighlight">\(y=2x+1\)</span> という関係性があると仮定し，Numpyを用いて以下の手順で生成する．</p>
 <p>まずはデータの個数の定義する．ここでは <span class="math notranslate nohighlight">\(N=30\)</span> とする．</p>
@@ -1141,12 +1199,12 @@ f_{\theta}(x) = ax + b,
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.94185751, 1.07317519, 1.06418834, 1.23748196, 1.19305563,
-       1.44806021, 1.43939961, 1.43574949, 1.67324776, 1.66809848,
-       1.51248069, 1.68249933, 1.76202456, 2.08567355, 2.04251235,
-       1.92355086, 2.1287014 , 2.18476594, 2.28150773, 2.34401662,
-       2.35231785, 2.40315211, 2.6333524 , 2.47290145, 2.61188775,
-       2.86669997, 3.02423016, 2.95961442, 2.94670595, 2.8987605 ])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.97369432, 1.18762045, 1.33520188, 1.25570937, 1.27906977,
+       1.30350062, 1.45589162, 1.39000579, 1.65915177, 1.78775691,
+       1.62548379, 1.76801713, 1.95371342, 2.01373513, 2.14805517,
+       1.91081656, 2.11491067, 2.17908767, 2.28436172, 2.16736008,
+       2.48757938, 2.36113678, 2.40638695, 2.49965821, 2.7152147 ,
+       2.81194123, 2.95821182, 3.08555131, 2.80385569, 2.96167226])
 </pre></div>
 </div>
 </div>
@@ -1164,7 +1222,7 @@ f_{\theta}(x) = ax + b,
 </div>
 </div>
 <section id="linspace">
-<h3>補足：<code class="docutils literal notranslate"><span class="pre">linspace</span></code>関数の説明<a class="headerlink" href="#linspace" title="Permalink to this heading">#</a></h3>
+<h3>補足：<code class="docutils literal notranslate"><span class="pre">linspace</span></code>関数の説明<a class="headerlink" href="#linspace" title="Link to this heading">#</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">linspace</span></code> 関数は引数としてスタートの値，最後の値，個数を与える．以下の例のように，<span class="math notranslate nohighlight">\(0\)</span> から <span class="math notranslate nohighlight">\(10\)</span> の範囲で <span class="math notranslate nohighlight">\(4\)</span> 個の値をもつベクトルを作成できる．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1181,7 +1239,7 @@ f_{\theta}(x) = ax + b,
 </div>
 </section>
 <section id="id14">
-<h3>補足：乱数の生成<a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h3>
+<h3>補足：乱数の生成<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">np.random.randn</span></code> は <strong>正規分布</strong> から引数として与えられる個数だけ乱数を生成する．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1191,7 +1249,7 @@ f_{\theta}(x) = ax + b,
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[-0.54771187 -1.14513945 -0.32857847]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[ 1.11543676 -0.74460682  0.84411836]
 </pre></div>
 </div>
 </div>
@@ -1200,11 +1258,11 @@ f_{\theta}(x) = ax + b,
 </section>
 </section>
 <section id="id15">
-<h2>【発展】 Scikit-Learnを利用して生成したデータから線形回帰を解く<a class="headerlink" href="#id15" title="Permalink to this heading">#</a></h2>
+<h2>【発展】 Scikit-Learnを利用して生成したデータから線形回帰を解く<a class="headerlink" href="#id15" title="Link to this heading">#</a></h2>
 <p>先ほどの例と同様にScikit-Learnを利用して線形回帰を解く．ただし，<code class="docutils literal notranslate"><span class="pre">np.load</span></code>関数で得られたデータ <code class="docutils literal notranslate"><span class="pre">X</span></code>と<code class="docutils literal notranslate"><span class="pre">y</span></code>ではなく自身で生成したデータ <code class="docutils literal notranslate"><span class="pre">X</span></code>と<code class="docutils literal notranslate"><span class="pre">y</span></code>に対して行う．<code class="docutils literal notranslate"><span class="pre">LinearRegression</span></code>クラスの使い方は先ほどと同様であるが，入力前にデータを加工する必要があるので注意されたい（これは実装された<code class="docutils literal notranslate"><span class="pre">LinearRegression</span></code>クラスの仕様によるものである）．</p>
 <p>再度，線形回帰の前提について復習しておくと，今から線形回帰 <code class="docutils literal notranslate"><span class="pre">LinearRegression</span></code> を用いて，<span class="math notranslate nohighlight">\((x,y)\)</span> から <span class="math notranslate nohighlight">\(y=ax+b\)</span> の <span class="math notranslate nohighlight">\(a\)</span> と <span class="math notranslate nohighlight">\(b\)</span> を計算することを試みる．前述のセルで作成したデータで考えると，<span class="math notranslate nohighlight">\(x\)</span> は <code class="docutils literal notranslate"><span class="pre">X</span></code>，<span class="math notranslate nohighlight">\(y\)</span> は <code class="docutils literal notranslate"><span class="pre">y</span></code> に対応する．ノイズが含まれた数値の集合データである <code class="docutils literal notranslate"><span class="pre">X</span></code> と <code class="docutils literal notranslate"><span class="pre">y</span></code> の情報のみ我々が利用することができ，データを生成したときに利用した <code class="docutils literal notranslate"><span class="pre">y_gt</span></code>, <code class="docutils literal notranslate"><span class="pre">a=2</span></code>, <code class="docutils literal notranslate"><span class="pre">b=1</span></code> という情報は一切知ることができないということに注意されたい．</p>
 <section id="id16">
-<h3>データの生成と加工<a class="headerlink" href="#id16" title="Permalink to this heading">#</a></h3>
+<h3>データの生成と加工<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
 <p>まずは【発展】データ生成で作成した <code class="docutils literal notranslate"><span class="pre">make_data</span></code> 関数を用いてデータを生成する．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1225,7 +1283,7 @@ f_{\theta}(x) = ax + b,
 <p><code class="docutils literal notranslate"><span class="pre">np.newaxis</span></code>の説明は後述する．</p>
 </section>
 <section id="id17">
-<h3>線形回帰モデルの当てはめ<a class="headerlink" href="#id17" title="Permalink to this heading">#</a></h3>
+<h3>線形回帰モデルの当てはめ<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
 <p>作成したデータで線形回帰を行うために，再度，先ほどの<code class="docutils literal notranslate"><span class="pre">LinearRegression</span></code> クラスをインスタンス化し，(<code class="docutils literal notranslate"><span class="pre">X,y</span></code>)のペアをインスタンスメソッド <code class="docutils literal notranslate"><span class="pre">fit</span></code> に渡す処理を再度行う．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1237,7 +1295,7 @@ f_{\theta}(x) = ax + b,
 </div>
 </section>
 <section id="id18">
-<h3>結果の確認と可視化<a class="headerlink" href="#id18" title="Permalink to this heading">#</a></h3>
+<h3>結果の確認と可視化<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;傾き a = </span><span class="si">{</span><span class="n">reg</span><span class="o">.</span><span class="n">coef_</span><span class="si">}</span><span class="s1">, 切片 b = </span><span class="si">{</span><span class="n">reg</span><span class="o">.</span><span class="n">intercept_</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
@@ -1245,7 +1303,7 @@ f_{\theta}(x) = ax + b,
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>傾き a = [[2.08934329]], 切片 b = [0.96317793]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>傾き a = [[1.96621852]], 切片 b = [1.03687394]
 </pre></div>
 </div>
 </div>
@@ -1269,19 +1327,19 @@ f_{\theta}(x) = ax + b,
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x177d66af0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x129f59f10&gt;
 </pre></div>
 </div>
-<img alt="../../_images/e7780a1be69b63f5fbe44af04b92e0b0d367ffb2d3b4d1e9803cac8494e09b57.png" src="../../_images/e7780a1be69b63f5fbe44af04b92e0b0d367ffb2d3b4d1e9803cac8494e09b57.png" />
+<img alt="../../_images/7cd6668120d87a19099d40e7891257e5e15fc12ee3a8d6b5e428569566fc84b2.png" src="../../_images/7cd6668120d87a19099d40e7891257e5e15fc12ee3a8d6b5e428569566fc84b2.png" />
 </div>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><code class="docutils literal notranslate"><span class="pre">LinearRegression</span></code>クラスの中身はScikit-Learnの<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html">リファレンスページ</a>へアクセスし，ページ中にある <a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/36958fb24/sklearn/linear_model/_base.py#L529">SOURCE</a> からGitHub上で公開されているコードを見ることができる．中身を見るとこれまでの講義で学んだ<a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2023-public/docs/04/conditional_branch.html">条件分岐</a>，<a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2023-public/docs/08/functions_and_scope.html">関数</a>，<a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2023-public/docs/10/application.html#">クラス</a>といった機能で書かれていることがわかる．ゼロから学ぶプログラミングが，このようなプログラムを読み解けるヒントになるだけでなく，自身でソフトウェアを開発して公開するきっかけになれば幸いである．</p>
+<p><code class="docutils literal notranslate"><span class="pre">LinearRegression</span></code>クラスの中身はScikit-Learnの<a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html">リファレンスページ</a>へアクセスし，ページ中にある <a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/36958fb24/sklearn/linear_model/_base.py#L529">SOURCE</a> からGitHub上で公開されているコードを見ることができる．中身を見るとこれまでの講義で学んだ<a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2024-public/docs/04/conditional_branch.html">条件分岐</a>，<a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2024-public/docs/08/functions_and_scope.html">関数</a>，<a class="reference external" href="https://ground-zero-programming.github.io/zero-pro2024-public/docs/10/application.html#">クラス</a>といった機能で書かれていることがわかる．ゼロから学ぶプログラミングが，このようなプログラムを読み解けるヒントになるだけでなく，自身でソフトウェアを開発して公開するきっかけになれば幸いである．</p>
 </div>
 </section>
 <section id="np-newaxis">
-<h3>補足：<code class="docutils literal notranslate"><span class="pre">np.newaxis</span></code><a class="headerlink" href="#np-newaxis" title="Permalink to this heading">#</a></h3>
+<h3>補足：<code class="docutils literal notranslate"><span class="pre">np.newaxis</span></code><a class="headerlink" href="#np-newaxis" title="Link to this heading">#</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">np.newaxis</span></code>は名前の通り軸を追加する変数である．軸を追加するとは (30,) のベクトルを (30,1) の縦ベクトルに変換する処理である．実際に以下の例で確認されたい．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1327,7 +1385,7 @@ newaxisしたベクトル b の中身は [[1]
 </section>
 </section>
 <section id="id19">
-<h2>【発展】 Scikit-Learnを利用せずに線形回帰を解く<a class="headerlink" href="#id19" title="Permalink to this heading">#</a></h2>
+<h2>【発展】 Scikit-Learnを利用せずに線形回帰を解く<a class="headerlink" href="#id19" title="Link to this heading">#</a></h2>
 <p>利用するだけなら，Scikit-Learnは便利なライブラリである．ここでは，敢えて，便利なライブラリを使わず，数式に基づいて線形回帰を解く方法を紹介する．</p>
 <p>そのために，線形回帰の解析解は以下の閉形式で与えられることを利用する．</p>
 <div class="math notranslate nohighlight">
@@ -1435,7 +1493,7 @@ J(\mathbf{W})=\sum_{i=1}^N e_i^2=\sum_{i=1}^N\left(y_i-\left(w_0+w_1 x_{i 1}+w_2
 </div>
 <p>式の意味や導出は無視しても，線形代数を受講した学生ならば，上記の正規方程式とデータ <span class="math notranslate nohighlight">\(\mathbf{X}, \mathbf{y}\)</span>がわかっていれば，傾きと切片のパラメータである <span class="math notranslate nohighlight">\(\mathbf{W}\)</span> の計算は容易であるはずである．</p>
 <section id="id20">
-<h3>データの生成と加工<a class="headerlink" href="#id20" title="Permalink to this heading">#</a></h3>
+<h3>データの生成と加工<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
 <p>先ほどの【発展】Scikit-Learnを利用して生成したデータから線形回帰を解くと同様に，以下のようにデータを生成・修正する．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1477,7 +1535,7 @@ J(\mathbf{W})=\sum_{i=1}^N e_i^2=\sum_{i=1}^N\left(y_i-\left(w_0+w_1 x_{i 1}+w_2
 </div>
 <p><span class="math notranslate nohighlight">\(x_0\)</span>, <span class="math notranslate nohighlight">\(x_1\)</span>が<span class="math notranslate nohighlight">\(x_0=x, x_1=1\)</span>となっていることがわかる．ここまででデータの準備は完了である．</p>
 <section id="np-hstack">
-<h4>補足：<code class="docutils literal notranslate"><span class="pre">np.hstack</span></code><a class="headerlink" href="#np-hstack" title="Permalink to this heading">#</a></h4>
+<h4>補足：<code class="docutils literal notranslate"><span class="pre">np.hstack</span></code><a class="headerlink" href="#np-hstack" title="Link to this heading">#</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">np.hstack</span></code>関数の処理を以下のコードで確認されたい．まず元々の<span class="math notranslate nohighlight">\(x_0\)</span>を作成．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1538,23 +1596,28 @@ J(\mathbf{W})=\sum_{i=1}^N e_i^2=\sum_{i=1}^N\left(y_i-\left(w_0+w_1 x_{i 1}+w_2
 </section>
 </section>
 <section id="id21">
-<h3>正規方程式からの解析解の導出<a class="headerlink" href="#id21" title="Permalink to this heading">#</a></h3>
+<h3>正規方程式からの解析解の導出<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
 <p>線形回帰の解析解は以下で導出できた．</p>
 <div class="math notranslate nohighlight">
 \[
-\mathbf{W} = \left( \mathbf{X}^T \mathbf{X} \right)^{-1} \mathbf{X}^T \mathbf{y}
+\mathbf{W} = \left( \mathbf{X}^\top \mathbf{X} \right)^{-1} \mathbf{X}^\top \mathbf{y}
 \]</div>
 <p>プログラムコードの可読性の観点から，上記の式を以下のように分割して計算する．</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\mathbf{W}_1 = \left( \mathbf{X}^T \mathbf{X} \right)^{-1} \\
-\mathbf{W}_2 = \mathbf{X}^T \mathbf{y} \\
+\mathbf{W}_1 = \left( \mathbf{X}^\top \mathbf{X} \right)^{-1} \\
+\mathbf{W}_2 = \mathbf{X}^\top \mathbf{y} \\
 \mathbf{W} = \mathbf{W}_1 \mathbf{W}_2
 \end{split}\]</div>
 <p>まず，<span class="math notranslate nohighlight">\(\mathbf{W}_1\)</span> を計算する．以下のコードで実装できる．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">W_1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">X</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
 </pre></div>
 </div>
 </div>
@@ -1582,9 +1645,14 @@ J(\mathbf{W})=\sum_{i=1}^N e_i^2=\sum_{i=1}^N\left(y_i-\left(w_0+w_1 x_{i 1}+w_2
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+</pre></div>
+</div>
+</div>
 </div>
 <section id="id22">
-<h4>補足：行列の転置<a class="headerlink" href="#id22" title="Permalink to this heading">#</a></h4>
+<h4>補足：行列の転置<a class="headerlink" href="#id22" title="Link to this heading">#</a></h4>
 <p>Numpyでは，行列の転置は <code class="docutils literal notranslate"><span class="pre">行列.T</span></code> でできる．以下のサンプルコードで確認されたい．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1615,7 +1683,7 @@ J(\mathbf{W})=\sum_{i=1}^N e_i^2=\sum_{i=1}^N\left(y_i-\left(w_0+w_1 x_{i 1}+w_2
 </div>
 </section>
 <section id="id23">
-<h4>補足：逆行列の計算<a class="headerlink" href="#id23" title="Permalink to this heading">#</a></h4>
+<h4>補足：逆行列の計算<a class="headerlink" href="#id23" title="Link to this heading">#</a></h4>
 <p>逆行列の計算は <code class="docutils literal notranslate"><span class="pre">np.linalg.inv</span></code> 関数を利用すれば良い．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1639,7 +1707,7 @@ J(\mathbf{W})=\sum_{i=1}^N e_i^2=\sum_{i=1}^N\left(y_i-\left(w_0+w_1 x_{i 1}+w_2
 </section>
 </section>
 <section id="id24">
-<h3>傾きと切片の確認<a class="headerlink" href="#id24" title="Permalink to this heading">#</a></h3>
+<h3>傾きと切片の確認<a class="headerlink" href="#id24" title="Link to this heading">#</a></h3>
 <p>計算された <code class="docutils literal notranslate"><span class="pre">W</span></code> について，傾きと切片を確認する．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1648,8 +1716,8 @@ J(\mathbf{W})=\sum_{i=1}^N e_i^2=\sum_{i=1}^N\left(y_i-\left(w_0+w_1 x_{i 1}+w_2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[1.97427075],
-       [1.00995353]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[1.87766756],
+       [1.06142391]])
 </pre></div>
 </div>
 </div>
@@ -1663,7 +1731,7 @@ J(\mathbf{W})=\sum_{i=1}^N e_i^2=\sum_{i=1}^N\left(y_i-\left(w_0+w_1 x_{i 1}+w_2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1.97427075])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1.87766756])
 </pre></div>
 </div>
 </div>
@@ -1676,7 +1744,7 @@ J(\mathbf{W})=\sum_{i=1}^N e_i^2=\sum_{i=1}^N\left(y_i-\left(w_0+w_1 x_{i 1}+w_2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1.00995353])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1.06142391])
 </pre></div>
 </div>
 </div>
@@ -1689,7 +1757,7 @@ J(\mathbf{W})=\sum_{i=1}^N e_i^2=\sum_{i=1}^N\left(y_i-\left(w_0+w_1 x_{i 1}+w_2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[2.08934329]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[1.96621852]])
 </pre></div>
 </div>
 </div>
@@ -1701,7 +1769,7 @@ J(\mathbf{W})=\sum_{i=1}^N e_i^2=\sum_{i=1}^N\left(y_i-\left(w_0+w_1 x_{i 1}+w_2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.96317793])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1.03687394])
 </pre></div>
 </div>
 </div>
@@ -1709,7 +1777,7 @@ J(\mathbf{W})=\sum_{i=1}^N e_i^2=\sum_{i=1}^N\left(y_i-\left(w_0+w_1 x_{i 1}+w_2
 <p>結果からもわかるように，<code class="docutils literal notranslate"><span class="pre">LinearRegression</span></code>の結果と近い値が得られることがわかった．</p>
 </section>
 <section id="id25">
-<h3>結果のプロット<a class="headerlink" href="#id25" title="Permalink to this heading">#</a></h3>
+<h3>結果のプロット<a class="headerlink" href="#id25" title="Link to this heading">#</a></h3>
 <p>最後に，計算された結果をグラフでプロットする．</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1728,10 +1796,10 @@ J(\mathbf{W})=\sum_{i=1}^N e_i^2=\sum_{i=1}^N\left(y_i-\left(w_0+w_1 x_{i 1}+w_2
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x177df2e50&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x129fed760&gt;
 </pre></div>
 </div>
-<img alt="../../_images/6ede907fe9d22978b4a92d0bdc15551b89769953bc45749a22a49d0c19100d38.png" src="../../_images/6ede907fe9d22978b4a92d0bdc15551b89769953bc45749a22a49d0c19100d38.png" />
+<img alt="../../_images/a25da09e9e661a7754318033e657f8c4878a948d98919603f62640ceee6d48cd.png" src="../../_images/a25da09e9e661a7754318033e657f8c4878a948d98919603f62640ceee6d48cd.png" />
 </div>
 </div>
 <p>Scikit-Learnを用いずに線形回帰を実行することができた．Pythonは機械学習だけでなく高度なアルゴリズムを提供するライブラリが提供されており便利なプログラミング言語である．しかしながら，言い換えると，機能の使い方さえ調べてしまえば，中身のアルゴリズムを理解せずとも誰でも利用できてしまう．Pythonの第一歩としてのゼロからはじめるプログラミングにおいては，これらの機能を利用できるだけ十分なレベルに到達しているが，受講者の皆さんにはぜひ内部のアルゴリズムまで調べて，<strong>ライブラリを用いず</strong> 自身で <strong>ゼロから</strong> 実装してみることを推奨する．このような経験は線形代数・微積分・確率統計など大学数学を学ぶモチベーションとなるだけでなく，皆さんがこれから学ぶプログラミング，数学，加えて専門科目の理解をより深めてくれるはずである．</p>
@@ -1766,8 +1834,8 @@ J(\mathbf{W})=\sum_{i=1}^N e_i^2=\sum_{i=1}^N\left(y_i-\left(w_0+w_1 x_{i 1}+w_2
               
               
               
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                <footer class="prev-next-footer d-print-none">
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="../13/exercise_introduction_to_data_analysis.html"
@@ -1795,6 +1863,7 @@ J(\mathbf{W})=\sum_{i=1}^N e_i^2=\sum_{i=1}^N\left(y_i-\left(w_0+w_1 x_{i 1}+w_2
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1866,9 +1935,10 @@ By Hiroaki Aizawa & Akira Furui
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023 (CC BY 4.0).
+      © Copyright 2024 (CC BY 4.0).
       <br/>
     
   </p>
@@ -1892,8 +1962,8 @@ By Hiroaki Aizawa & Akira Furui
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
